@@ -162,6 +162,57 @@
         }
     </style>
 
+    <style>
+        /* Creator core logo: keeps the existing circular/floating core */
+        .creator-core .creator-logo-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 50%;
+        }
+
+        .creator-core .creator-logo {
+            width: 72%;
+            height: 72%;
+            object-fit: contain;
+            border-radius: 50%;
+            display: block;
+        }
+
+        /* Live website previews inside the existing browser mockups */
+        .browser-content.site-preview {
+            position: relative;
+            overflow: hidden;
+            padding: 0;
+        }
+
+        .browser-content.site-preview iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 300px;
+            border: 0;
+            display: block;
+            background: #fff;
+            transform-origin: top left;
+        }
+
+        .project-preview-link {
+            position: absolute;
+            inset: 0;
+            z-index: 5;
+            display: block;
+            text-decoration: none;
+        }
+
+        .project-preview-link:focus-visible {
+            outline: 3px solid #c7b89a;
+            outline-offset: -3px;
+        }
+    </style>
+
     <!-- Main CSS -->
 
     <link
@@ -1191,37 +1242,28 @@
 
                                     </div>
 
-                                    <div class="browser-address">
-
+                                    <a class="browser-address" href="https://sedikanaattorneys.co.za/" target="_blank" rel="noopener noreferrer">
                                         sedikanaattorneys.co.za
-
-                                    </div>
+                                    </a>
 
                                 </div>
 
                                 <div
-                                    class="browser-content legal-preview"
-                                    aria-label="Sedikana Attorneys Inc website preview"
+                                    class="browser-content legal-preview site-preview"
+                                    aria-label="Live preview of Sedikana Attorneys Inc website"
                                 >
-
-                                    <span class="preview-label">
-                                        SEDIKANA ATTORNEYS INC
-                                    </span>
-
-                                    <h3>
-
-                                        Justice.
-
-                                        <br>
-
-                                        <span>
-                                            Experience.
-                                        </span>
-
-                                    </h3>
-
-                                    <div class="preview-line"></div>
-
+                                    <iframe
+                                        src="https://sedikanaattorneys.co.za/"
+                                        title="Sedikana Attorneys Inc website preview"
+                                        loading="lazy"
+                                    ></iframe>
+                                    <a
+                                        href="https://sedikanaattorneys.co.za/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="project-preview-link"
+                                        aria-label="Open Sedikana Attorneys Inc website"
+                                    ></a>
                                 </div>
 
                             </div>
@@ -1282,33 +1324,28 @@
 
                                     </div>
 
-                                    <div class="browser-address">
+                                    <a class="browser-address" href="https://www.sazimhousing.co.za/" target="_blank" rel="noopener noreferrer">
                                         sazimhousing.co.za
-                                    </div>
+                                    </a>
 
                                 </div>
 
                                 <div
-                                    class="browser-content housing-preview"
-                                    aria-label="SAZIM HOMES website preview"
+                                    class="browser-content housing-preview site-preview"
+                                    aria-label="Live preview of SAZIM HOMES website"
                                 >
-
-                                    <span class="preview-label">
-                                        SAZIM HOMES
-                                    </span>
-
-                                    <h3>
-
-                                        Building
-
-                                        <br>
-
-                                        <span>
-                                            Smiles.
-                                        </span>
-
-                                    </h3>
-
+                                    <iframe
+                                        src="https://www.sazimhousing.co.za/"
+                                        title="SAZIM HOMES website preview"
+                                        loading="lazy"
+                                    ></iframe>
+                                    <a
+                                        href="https://www.sazimhousing.co.za/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="project-preview-link"
+                                        aria-label="Open SAZIM HOMES website"
+                                    ></a>
                                 </div>
 
                             </div>
@@ -1369,33 +1406,28 @@
 
                                     </div>
 
-                                    <div class="browser-address">
+                                    <a class="browser-address" href="https://shamonadeacademy.xyz/" target="_blank" rel="noopener noreferrer">
                                         shamonadeacademy.xyz
-                                    </div>
+                                    </a>
 
                                 </div>
 
                                 <div
-                                    class="browser-content education-preview"
-                                    aria-label="Shamonade Academy website preview"
+                                    class="browser-content education-preview site-preview"
+                                    aria-label="Live preview of Shamonade Academy website"
                                 >
-
-                                    <span class="preview-label">
-                                        SHAMONADE ACADEMY
-                                    </span>
-
-                                    <h3>
-
-                                        Learning
-
-                                        <br>
-
-                                        <span>
-                                            starts here.
-                                        </span>
-
-                                    </h3>
-
+                                    <iframe
+                                        src="https://shamonadeacademy.xyz/"
+                                        title="Shamonade Academy website preview"
+                                        loading="lazy"
+                                    ></iframe>
+                                    <a
+                                        href="https://shamonadeacademy.xyz/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="project-preview-link"
+                                        aria-label="Open Shamonade Academy website"
+                                    ></a>
                                 </div>
 
                             </div>
@@ -1456,36 +1488,28 @@
 
                                     </div>
 
-                                    <div class="browser-address">
-                                        codedbytiba.co.za
-                                    </div>
+                                    <a class="browser-address" href="https://mental-health-amberten.vercel.app/" target="_blank" rel="noopener noreferrer">
+                                        mental-health-amberten.vercel.app
+                                    </a>
 
                                 </div>
 
                                 <div
-                                    class="browser-content future-preview"
-                                    aria-label="Upcoming Coded by Tiba project"
+                                    class="browser-content future-preview site-preview"
+                                    aria-label="Live preview of the upcoming Coded by Tiba project"
                                 >
-
-                                    <span class="preview-label">
-                                        NEXT PROJECT
-                                    </span>
-
-                                    <h3>
-
-                                        What's
-
-                                        <span>
-                                            next?
-                                        </span>
-
-                                    </h3>
-
-                                    <i
-                                        class="fa-solid fa-plus"
-                                        aria-hidden="true"
-                                    ></i>
-
+                                    <iframe
+                                        src="https://mental-health-amberten.vercel.app/"
+                                        title="Mental health project website preview"
+                                        loading="lazy"
+                                    ></iframe>
+                                    <a
+                                        href="https://mental-health-amberten.vercel.app/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="project-preview-link"
+                                        aria-label="Open the mental health project website"
+                                    ></a>
                                 </div>
 
                             </div>
@@ -1786,8 +1810,12 @@
 
                         <div class="creator-core">
 
-                            <span>
-                                T
+                            <span class="creator-logo-wrap">
+                                <img
+                                    src="images/logo.jpeg"
+                                    alt="Coded by Tiba logo"
+                                    class="creator-logo"
+                                >
                             </span>
 
                         </div>
